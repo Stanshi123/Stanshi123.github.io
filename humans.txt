@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+   Zifan Shi - Developer
 
 # THANKS
 
-    <name>
+    NES.CSS
 
 # TECHNOLOGY COLOPHON
 
