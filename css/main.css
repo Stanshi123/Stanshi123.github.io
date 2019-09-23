@@ -172,6 +172,14 @@ html, body, pre, code, kbd, samp {
   margin-right: 30px;
   transform: scale(2.5);
 }
+
+.experience-content {
+  margin: 10px;
+}
+
+.experience-title {
+  font-size: 18px;
+}
 /* ==========================================================================
   Helper classes
   ========================================================================== */
