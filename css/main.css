@@ -189,6 +189,11 @@ html, body, pre, code, kbd, samp {
 .project-content {
   margin: 10px;
 }
+
+.project-img {
+  margin-left: calc(20% - 20px);
+  width:60%;
+}
 /* ==========================================================================
   Helper classes
   ========================================================================== */
@@ -278,8 +283,76 @@ html, body, pre, code, kbd, samp {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 750px) {
   /* Style adjustments for viewports that meet the condition */
+  #my_big_image {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  #buttons {
+    margin-left: calc(20% - 8px);
+    width: 60%;
+  }
+
+  #about {
+    font-size: 3vw;
+  }
+
+  .project-img {
+    width: 90%;
+    margin-left: calc(5% - 5px);
+  }
+
+  .project-title {
+    font-size: 3.5vw;
+  }
+
+  .experience-title {
+    font-size: 3.5vw;
+  }
+
+  .project-content {
+    font-size: 3vw;
+  }
+
+  .experience-content {
+    font-size: 3vw;
+  }
+
+  #guitar {
+    font-size: 3vw;
+  }
+
+  .nes-icon.video-icon {
+    transform: scale(1);
+    position: absolute;
+  }
+
+  .nes-container.with-title>.page-title.title {
+    font-size: 5.5vw !important;
+  }
+
+  .nes-container.with-title.section {
+    width: 95%
+  }
+
+  .nes-container.with-title.section>.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transform: scale(1.5);
+  }
+
+  .icon-link {
+    margin-left: 20px;
+  }
+
+  ul {
+    padding-inline-start: 10px;
+  }
+
 }
 
 @media print,
