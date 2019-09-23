@@ -23,6 +23,20 @@
 </head>
 
 <body>
+<script>
+  function displayHandler(ele) {
+    let id = ele.id;
+    let parsedId = id.split("-")[0];
+    document.getElementById("home").style.display="none";
+    document.getElementById(parsedId).style.display = "block";
+  }
+
+  function closeHandler(ele) {
+    let id = ele.parentNode.id;
+    document.getElementById(id).style.display="none";
+    document.getElementById("home").style.display = "block";
+  }
+</script>
 <!--[if IE]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
   <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -35,15 +49,15 @@
   <div id="my_big_name"> Zifan Shi</div>
 
   <div id="buttons">
-    <a href="#about" class="nes-btn profile-btn" style="margin:10px">ABOUT</a> <br>
-    <a href="#projects" class="nes-btn profile-btn" style="margin:10px">PROJECTS</a> <br>
-    <a href="#experience" class="nes-btn profile-btn" style="margin:10px">EXPERIENCE</a> <br>
-    <a href="#guitar" class="nes-btn profile-btn" style="margin:10px">GUITAR</a>
+    <a id="about-btn" href="#about" class="nes-btn profile-btn" style="margin:10px" onclick="displayHandler(this)">ABOUT</a> <br>
+    <a id="projects-btn" href="#projects" class="nes-btn profile-btn" style="margin:10px" onclick="displayHandler(this)">PROJECTS</a> <br>
+    <a id="experience-btn" href="#experience" class="nes-btn profile-btn" style="margin:10px" onclick="displayHandler(this)">EXPERIENCE</a> <br>
+    <a id="guitar-btn" href="#guitar" class="nes-btn profile-btn" style="margin:10px" onclick="displayHandler(this)">GUITAR</a>
   </div>
 </div>
 
-<div id="about" class="nes-container with-title section">
-  <i class="nes-icon close is_large"> </i>
+<div id="about" class="nes-container with-title section" style="display:none">
+  <i class="nes-icon close is_large" onclick="closeHandler(this)"> </i>
   <p class="title page-title">ABOUT</p>
   <p>Hello, my name is Zifan Shi! You can call me "Stan" if mandarin is too hard. I was born and raised in Suzhou,
     China, a
@@ -120,8 +134,8 @@
   </div>
 </div>
 
-<div id="projects" class="nes-container with-title section">
-  <i class="nes-icon close is_large"> </i>
+<div id="projects" class="nes-container with-title section" style="display:none">
+  <i class="nes-icon close is_large" onclick="closeHandler(this)"> </i>
   <p class="title page-title">PROJECTS</p>
 
   <div class="lists">
@@ -209,8 +223,8 @@
 
 </div>
 
-<div id="experience" class="nes-container with-title section">
-  <i class="nes-icon close is_large"> </i>
+<div id="experience" class="nes-container with-title section" style="display:none">
+  <i class="nes-icon close is_large" onclick="closeHandler(this)"> </i>
   <p class="title page-title">EXPERIENCE</p>
   <div class="lists">
     <ul class="nes-list is-disc fat-list">
@@ -323,10 +337,10 @@
     </ul>
 
   </div>
-</div>
+</div >
 
-<div id="guitar" class="nes-container with-title section">
-  <i class="nes-icon close is_large"></i>
+<div id="guitar" class="nes-container with-title section" style="display:none">
+  <i class="nes-icon close is_large" onclick="closeHandler(this)"></i>
   <p class="title page-title">GUITAR</p>
   <p>I started to study guitar since the age of 10. I did a few regional and national competitions back in China.</p>
 
