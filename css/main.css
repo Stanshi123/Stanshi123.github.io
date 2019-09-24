@@ -118,6 +118,14 @@ html, body, pre, code, kbd, samp {
   text-align: center;
 }
 
+#contact {
+  margin-top: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
 #buttons {
   width: 30%;
   margin-top: 30px;
@@ -322,6 +330,10 @@ html, body, pre, code, kbd, samp {
   }
 
   #guitar {
+    font-size: 3vw;
+  }
+
+  #contact {
     font-size: 3vw;
   }
 
